@@ -167,7 +167,7 @@ def plotcube(zlabel, ylabel, xlabel, cube, x=None, y=None, z=None, normalize=Fal
 if __name__ == "__main__":
     k = len(sys.argv) - 1
     if k <= 1:
-        print("Supply at least 2 sequences")
+        print("Usage: python3 dp_sequence_distance.py sequence1 sequence2 [sequence3] ...")
         exit(1)
 
     seqs = sys.argv[1:]
