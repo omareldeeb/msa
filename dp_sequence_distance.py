@@ -63,6 +63,7 @@ def sequence_distance(seqs):
                 val = min(mem.item(tuple(index_vec)), mem.item(tuple(curr_vec)) + cost(dot(seqs, index_vec, bit_vec)))
                 mem[tuple(index_vec)] = val
 
+    # output last matrix entry for final distance and return memoization matrix
     print('Calculated distance: ' + str(mem.item((tuple(map(lambda x: x - 1, dim))))))
     return mem
 
